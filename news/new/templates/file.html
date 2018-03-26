@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% if filename == "helloshiyanlou" %}
+        <p>title: {{ content.title1 }}</p>
+        <p>created_time: {{ content.created_time1 }}</p>
+        <p>content: {{ content.content1 }}</p>
+    {% elif filename == "helloworld" %}
+        <p>title: {{ content.title2 }}</p>
+        <p>created_time: {{ content.created_time2 }}</p>
+        <p>content: {{ content.content2 }}</p>
+    {% endif %}
+{% endblock %}
