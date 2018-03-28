@@ -2,7 +2,9 @@
 {% block header %}{% endblock %}
 
 {% block content %}
-        <a href="{{url_for('files', file_id)}}">{{titles.id}}</a></br>
+    {% for titles in title %}
+        <a href="{{ url_for('files', file_id=file.id)}}">{{titles.id}}</a></br>
+    {% endfor %}
     </br>
 {% endblock %}
 

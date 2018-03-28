@@ -10,6 +10,7 @@ app.config['TEMPLATES_AUTO_RELOAD'] = True
 app.config.update({'SECRET_KEY': 'a random string'})
 app.config[
     'SQLALCHEMY_DATABASE_URI'] = 'mysql://huxin:l1hg5JdhezWf@192.168.6.68:3306/shiyanlou'
+app.config['SQLALCHEMY_TRACK_MODIFCATIONS'] = False
 
 db = SQLAlchemy(app)
 
@@ -28,7 +29,7 @@ class File(db.Model):
         # if created_time is None:
         #     created_time = datetime.utcnow()
         self.created_time = created_time
-        self.category_id = category_id
+        self.category = category_id
         self.content = content
 
     def __repr__(self):
