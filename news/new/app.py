@@ -1,18 +1,21 @@
 # -*- coding:utf-8 -*-
-from flask import Flask
-from flask import render_template, redirect, url_for, abort
-from flask.ext.sqlalchemy import SQLAlchemy
 from datetime import datetime
+from pymongo import MongoClient
+from flask import Flask, render_template
+from flask_sqlalchemy import SQLAlchemy
 
 
 app = Flask(__name__)
+
+app.config.update(dict(
+    SQLALCHEMY_DATABASE_URI='mysql://huxin:l1hg5JdhezWf@192.168.6.68:3306/shiyanlou'))
+
 app.config['TEMPLATES_AUTO_RELOAD'] = True
-app.config.update({'SECRET_KEY': 'a random string'})
-app.config[
-    'SQLALCHEMY_DATABASE_URI'] = 'mysql://huxin:l1hg5JdhezWf@192.168.6.68:3306/shiyanlou'
+# app.config.update({'SECRET_KEY': 'a random string'})
 app.config['SQLALCHEMY_TRACK_MODIFCATIONS'] = False
 
 db = SQLAlchemy(app)
+mongo = MongoClient('192.168.32.129', 27017).shiyanlou
 
 
 class File(db.Model):
@@ -31,8 +34,44 @@ class File(db.Model):
         self.category = category_id
         self.content = content
 
+    def add_tag(self, tag_name):
+        file_item = mongo.files.find_one({'file_id': self.id})
+        if file_item:
+            tags = file_item['tags']
+            if tag_name not in tags:
+                tags.append(tag_name)
+            mongo.file.update_one({'file_id': self.id}, {'$set': {'tags': tags}})
+        else:
+            tags = [tag_name]
+            mongo.files.insert_one({'file_id': self.id, 'tags': tags})
+        return tags
+    
+    def remove_tag(self, tag_name):
+        file_item = mongo.file.find_one({'file_id': self.id})
+        if file_item:
+            tags = file_item['tags']
+            try:
+                tags.remove(tag_name)
+                new_tags = tags
+            except ValueError:
+                return tags
+            mongo.file.update_one({'file.id': self.id}, {'$set': {'tags': new_tags}})
+            return new_tags
+        return []
+    
+    @property
+    def tags(self):
+        file_item = mongo.file.find_one({'file_id': self.id})
+        if file_item:
+            print(file_item)
+            return file_item['tags']
+        else:
+            return []
+
+
     def __repr__(self):
         return '{0}'.format(self.title)
+
 
 
 class Category(db.Model):
@@ -57,6 +96,11 @@ def insert_datas():
     db.session.add(file1)
     db.session.add(file2)
     db.session.commit()
+    file1.add_tag('tach')
+    file1.add_tag('java')
+    file1.add_tag('linux')
+    file2.add_tag('tech')
+    file2.add_tag('python')
 
 
 
