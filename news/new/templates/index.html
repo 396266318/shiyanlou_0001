@@ -1,10 +1,14 @@
-{% extends 'base.html'%}
-{% block header %}{% endblock %}
-
-{% block content %}
-    {% for titles in title %}
-        <a href="{{ url_for('files', file_id=file.id)}}">{{titles.id}}</a></br>
-    {% endfor %}
-    </br>
-{% endblock %}
-
+<!DOCTYPE html>
+<html lang='zh-CN'>
+    <head>
+        <mata charset="UTF-8">
+        <title>Index</title>
+    </head>
+    <body>
+        <ul>
+        {% for file in files %}
+        <li><a href="{{url_for('file', file_id=file.id)}}" target="_blank">{{file.title}}</a></li>
+        {% endfor %}
+        </ul>
+    </body>
+</html>

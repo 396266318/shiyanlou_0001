@@ -1,13 +1,12 @@
-{% extends 'base.html' %}
-
-{% block content %}
-    {% if filename == "helloshiyanlou" %}
-        <p>title: {{ content.title1 }}</p>
-        <p>created_time: {{ content.created_time1 }}</p>
-        <p>content: {{ content.content1 }}</p>
-    {% elif filename == "helloworld" %}
-        <p>title: {{ content.title2 }}</p>
-        <p>created_time: {{ content.created_time2 }}</p>
-        <p>content: {{ content.content2 }}</p>
-    {% endif %}
-{% endblock %}
+<!DOCTYPE html>
+<html lang='zh-CN'>
+    <head>
+        <meta charset="UTF-8">
+        <title>file</title>
+    </head>
+    <body>
+        <h1>{{ file_item['title'] }}</h1>
+        <p>{{ file_item['created_time'] }}</p>
+        <p>{{ file_item['content'] }}</p>
+    </body>
+</html>
