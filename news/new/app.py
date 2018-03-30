@@ -15,7 +15,7 @@ app.config['TEMPLATES_AUTO_RELOAD'] = True
 app.config['SQLALCHEMY_TRACK_MODIFCATIONS'] = False
 
 db = SQLAlchemy(app)
-mongo = MongoClient('192.168.32.129', 27017).shiyanlou
+mongo = MongoClient('127.0.0.1', 27017).shiyanlou
 
 
 class File(db.Model):
