@@ -7,11 +7,12 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 
+# app.config.update(dict(
+#     SQLALCHEMY_DATABASE_URI='mysql://huxin:l1hg5JdhezWf@192.168.6.68:3306/shiyanlou'))
 app.config.update(dict(
-    SQLALCHEMY_DATABASE_URI='mysql://huxin:l1hg5JdhezWf@192.168.6.68:3306/shiyanlou'))
+        SQLALCHEMY_DATABASE_URI='mysql://root@localhost/shiyanlou'))
 
 app.config['TEMPLATES_AUTO_RELOAD'] = True
-# app.config.update({'SECRET_KEY': 'a random string'})
 app.config['SQLALCHEMY_TRACK_MODIFCATIONS'] = False
 
 db = SQLAlchemy(app)
@@ -19,19 +20,19 @@ mongo = MongoClient('127.0.0.1', 27017).shiyanlou
 
 
 class File(db.Model):
-    __tablename__ = 'file' # 文件表
+    __tablename__ = 'files' # 文件表
 
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(80), unique=True)
     created_time = db.Column(db.DateTime)
     category_id = db.Column(db.Integer, db.ForeignKey('category.id'))
-    content = db.Column(db.Text)
     category = db.relationship('Category', uselist=False)  # 实例化 Category 关系
+    content = db.Column(db.Text)
 
     def __init__(self, title, created_time, category_id, content):
         self.title = title
         self.created_time = created_time
-        self.category = category_id
+        self.category = category
         self.content = content
 
     def add_tag(self, tag_name):
@@ -40,14 +41,14 @@ class File(db.Model):
             tags = file_item['tags']
             if tag_name not in tags:
                 tags.append(tag_name)
-            mongo.file.update_one({'file_id': self.id}, {'$set': {'tags': tags}})
+            mongo.files.update_one({'file_id': self.id}, {'$set': {'tags': tags}})
         else:
             tags = [tag_name]
             mongo.files.insert_one({'file_id': self.id, 'tags': tags})
         return tags
     
     def remove_tag(self, tag_name):
-        file_item = mongo.file.find_one({'file_id': self.id})
+        file_item = mongo.files.find_one({'file_id': self.id})
         if file_item:
             tags = file_item['tags']
             try:
@@ -55,13 +56,13 @@ class File(db.Model):
                 new_tags = tags
             except ValueError:
                 return tags
-            mongo.file.update_one({'file.id': self.id}, {'$set': {'tags': new_tags}})
+            mongo.files.update_one({'file.id': self.id}, {'$set': {'tags': new_tags}})
             return new_tags
         return []
     
     @property
     def tags(self):
-        file_item = mongo.file.find_one({'file_id': self.id})
+        file_item = mongo.files.find_one({'file_id': self.id})
         if file_item:
             print(file_item)
             return file_item['tags']
@@ -75,7 +76,7 @@ class File(db.Model):
 
 
 class Category(db.Model):
-    __tablename__ = 'category' # 类别表
+    __tablename__ = 'categorys' # 类别表
 
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(80))
