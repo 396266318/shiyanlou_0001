@@ -74,6 +74,7 @@ class Category(db.Model):
     def __init__(self, name):
         self.name = name
 
+
 @app.route('/')
 @app.route('/files/')
 def index():
