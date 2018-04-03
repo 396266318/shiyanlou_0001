@@ -33,18 +33,18 @@ class File(db.Model):
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
     category = db.relationship('Category', uselist=False)
 
-    # def __init__(self, title, created_time, category, content):
-    #     self.title = title
-    #     self.created_time = created_time
-    #     self.category = category
-    #     self.content = content
+    def __init__(self, title, created_time, category, content):
+        self.title = title
+        self.created_time = created_time
+        self.category = category
+        self.content = content
 
     def add_tag(self, tag):
         mongo.file.update_one({'_id': self.id}, {'$addToSet': {'tags': tag}})
         return self.__file['tags']
 
-    def remove_tag(self, tag_name):
-        mongo.file.update_one({'_id': self.id}, {'$pull': {'tags': tag}})
+    def remove_tag(self, tag):
+        mongo.file.update_one({'_id': self.id}, {'$pull': {'tags': tag_name}})
         return self.__file['tags']
 
     @property
