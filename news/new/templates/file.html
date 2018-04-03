@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang='zh-CN'>
-    <head>
-        <meta charset="UTF-8">
-        <title>file</title>
-    </head>
-    <body>
-        <h1>{{ file.title }}</h1>
-        <p>{{ file.created_at }}</p>
-        <p>{{ file.content }}</p>
-    </body>
-</html>
+{% extends "base.html" %} 
+{% block title %}File{% endblock %} 
+{% block content %}
+<h1>{{ file_item['title'] }}</h1>
+<p>{{ file_item['created_time'] }}</p>
+<p>{{ file_item['content'] }}</p>
+{% endblock %}

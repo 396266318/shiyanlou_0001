@@ -4,7 +4,7 @@ from datetime import datetime
 from pymongo import MongoClient
 from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy import event
+# from sqlalchemy import event
 
 app = Flask(__name__)
 
@@ -18,7 +18,7 @@ app.config.update(dict(
 
 db = SQLAlchemy(app)
 
-mongo = MongoClient('localhost', 27017).news
+mongo = MongoClient('127.0.0.1', 27017).shiyanlou
 
 
 class File(db.Model):
@@ -39,30 +39,43 @@ class File(db.Model):
         self.category = category
         self.content = content
 
-    def add_tag(self, tag):
-        mongo.file.update_one({'_id': self.id}, {'$addToSet': {'tags': tag}})
-        return self.__file['tags']
+    def add_tag(self, tag_name):
+        file_item = mongo.files.find_one({'file_id': self.id})
+        if file_item:
+            tags = file_item['tags']
+            if tag_name not in tags:
+                tags.append(tag_name)
+            mongo.files.update_one({'file_id': self.id}, {'$set': {'tags': tags}})
+        else:
+            tags = [tag_name]
+            mongo.files.insert_one({'file_id': self.id, 'tags': tags})
+        return tags
 
-    def remove_tag(self, tag):
-        mongo.file.update_one({'_id': self.id}, {'$pull': {'tags': tag_name}})
-        return self.__file['tags']
+    def remove_tag(self, tag_name):
+        file_item = mongo.files.find_one({'file_id': self.id})
+        if file_item:
+            tags = file_item['tags']
+            try:
+                new_tags = tags.remove(tag_name)
+            except ValueError:
+                return tags
+            mongo.files.update_one({'file_id': self.id}, {'$set', {'tags': new_tags}})
+            return new_tags
+        return []
 
-    @property
-    def __file(self):
-        return mongo.file.find_one({'_id': self.id})
+    # @property
+    # def __file(self):
+    #     return mongo.file.find_one({'_id': self.id})
 
     @property
     def tags(self):
-        return self.__file['tags']
+        file_item = mongo.files.find_one({'file_id': self.id})
+        if file_item:
+            print(file_item)
+            return file_item['tags']
+        else:
+            return []
 
-@event.listens_for(File, 'after_insert')
-def auto_create_mongodb_file(mapper, conn, file):
-    mongo.file.insert_one({'_id': file.id})
-
-
-@event.listens_for(File, 'after_delete')
-def auto_delete_mongodb_file(mapper, conn, file):
-    mongo.file.delete_one({'_id': file.id})
 
 
 class Category(db.Model):
@@ -76,28 +89,13 @@ class Category(db.Model):
         self.name = name
 
 
-@app.route('/')
-@app.route('/files/')
-def index():
-    return render_template('index.html', files=File.query.all())
-
-
-@app.route('/files/<int:file_id>')
-def file(file_id):
-    file = File.query.get_or_404(file_id)
-    return render_template('file.html', file=file)
-
-
-@app.errorhandler(404)
-def not_found(error):
-    return render_template('404.html'), 404
-
-
 def insert_datas():
     java = Category('Java')
     python = Category('Python')
-    file1 = File('Hello Java', datetime.utcnow(), java, 'File Content - Java is cool!')
-    file2 = File('Hello Python', datetime.utcnow(), python, 'File Content - Python is cool!')
+    file1 = File('Hello Java', datetime.utcnow(),
+                 java, 'File Content - Java is cool!')
+    file2 = File('Hello Python', datetime.utcnow(),
+                 python, 'File Content - Python is cool!')
     db.session.add(java)
     db.session.add(python)
     db.session.add(file1)
@@ -110,8 +108,22 @@ def insert_datas():
     file2.add_tag('python')
 
 
+@app.route('/')
+def index():
+    return render_template('index.html', files=File.query.all())
+
+
+@app.route('/files/<int:file_id>')
+def file(file_id):
+    file_item = File.query.get_or_404(file_id)
+    return render_template('file.html', file_item=file_item)
+
+
+@app.errorhandler(404)
+def not_found(error):
+    return render_template('404.html'), 404
+
+
+
 if __name__ == '__main__':
-    db.create_all()
-    if not Category.query.filter_by(name='Java').first():
-        insert_datas()
-    app.run()
+    app.run(debug=True)
