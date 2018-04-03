@@ -5,15 +5,15 @@ from sqlalchemy import event
 from pymongo import MongoClient
 from datetime import datetime
 
-db = SQLAlchemy()
 
 app = Flask(__name__)
 
 app.config.update({
-    'SQLALCHEMY_DATABASE_URI': 'mysql://huxin:l1hg5JdhezWf@192.168.6.68:3306/news'
+    'SQLALCHEMY_DATABASE_URI': 'mysql://huxin:l1hg5JdhezWf@192.168.6.68:3306/shiyanlou'
 })
 
-db.init_app(app)
+# db.init_app(app)
+db = SQLAlchemy(app)
 
 mongo = MongoClient('127.0.0.1', 27017).news
 
@@ -21,7 +21,8 @@ class File(db.Model):
     __tablename__ = "files"
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(80), unique=True)
-    category_id = db.Column(db.Integer, db.ForeignKey('categoryies.id'))
+    category_id = db.Column(db.Integer, db.ForeignKey('categories.id'))
+    # category_id = db.Column(db.Integer, db.ForeignKey('category.id'))
     content = db.Column(db.Text)
 
     updated_at = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
@@ -31,7 +32,7 @@ class File(db.Model):
      
     @property
     def __file(self):
-        return mongo.file_one({'_id': self.id})
+        return mongo.file.file_one({'_id': self.id})
 
     @property
     def tags(self):

@@ -6,16 +6,17 @@ from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import event
 
-db = SQLAlchemy()
 app = Flask(__name__)
 
 
-app.config.update(
-    {'SQLALCHEMY_DATABASE_URI': 'mysql://root@localhost/news'})
+# app.config.update(
+#     {'SQLALCHEMY_DATABASE_URI': 'mysql://root@localhost/news'})
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-# app.config.update(dict(
-#     SQLALCHEMY_DATABASE_URI='mysql://huxin:l1hg5JdhezWf@192.168.6.68:3306/shiyanlou'))
-db.init_app(app)
+app.config.update(dict(
+    SQLALCHEMY_DATABASE_URI='mysql://huxin:l1hg5JdhezWf@192.168.6.68:3306/shiyanlou'))
+# db.init_app(app)
+
+db = SQLAlchemy(app)
 
 mongo = MongoClient('localhost', 27017).news
 
