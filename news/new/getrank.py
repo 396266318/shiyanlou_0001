@@ -44,7 +44,7 @@ def get_rank(user_id):
                     {
                         'total_time': {'$lt': data['total_time']},
                         'total_score': data['total_score']
-                     }
+                    }
                 ]
             }
         },
@@ -63,10 +63,10 @@ def get_rank(user_id):
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        # print("Parameter error.")
+        print("Parameter error.")
         sys.exit(1)
 
     user_id = sys.argv[1]
-    userdata = get_rank(user_id)
+    userdata = get_rank(int(user_id))
     print(userdata)
 
