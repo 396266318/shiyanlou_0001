@@ -5,15 +5,15 @@ class Shiyanlou_warehouse(scrapy.Spider):
     name = 'Shiyanlou-github-warehouse'
 
     @property
-    def start_requests(self):
+    def start_urls(self):
         url_tmpl = 'https://github.com/shiyanlou?page={}&tab=repositories'
         return (url_tmpl.format(i) for i in range(1, 5))
 
     def parse(self, response):
-        for course in response.css('#user-repositories-list'):
+        for course in response.css('#user-repositories-list>ul>li'):
             yield{
-                'name': course.css('div.d-inline-block.mb-1 > h3 > a::text').extract_first().strip(),
-                'update_time': course.css('div.f6.text-gray.mt-2 > relative-time::attr(datetime)').extract_first()
+                'name': course.css('div>h3>a::text').extract_first().strip(),
+                'update_time': course.('div.f6.text-gray.mt-2 > relative-time: : attr(datetime)').extract_first()
             }
 
 # css
