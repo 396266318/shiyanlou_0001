@@ -13,7 +13,7 @@ class Shiyanlou_warehouse(scrapy.Spider):
         for course in response.css('#user-repositories-list>ul>li'):
             yield{
                 'name': course.css('div>h3>a::text').extract_first().strip(),
-                'update_time': course.('div.f6.text-gray.mt-2 > relative-time: : attr(datetime)').extract_first()
+                'update_time': course.css('div.f6.text-gray.mt-2 > relative-time::attr(datetime)').extract_first()
             }
 
 # css
