@@ -1,0 +1,378 @@
+[
+  {
+    "minutes": 30,
+    "created_at": "2016-05-01 00:00:10",
+    "user_id": 199071,
+    "lab": "\u7528\u6237\u53ca\u6587\u4ef6\u6743\u9650\u7ba1\u7406",
+    "course": "Linux \u57fa\u7840\u5165\u95e8\uff08\u65b0\u7248\uff09"
+  },
+  {
+    "minutes": 6,
+    "created_at": "2016-05-01 00:00:15",
+    "user_id": 199373,
+    "lab": "Linux \u7cfb\u7edf\u7b80\u4ecb",
+    "course": "Linux \u57fa\u7840\u5165\u95e8\uff08\u65b0\u7248\uff09"
+  },
+  {
+    "minutes": 3,
+    "created_at": "2016-05-01 00:01:49",
+    "user_id": 173927,
+    "lab": "Linux \u7cfb\u7edf\u7b80\u4ecb",
+    "course": "Linux \u57fa\u7840\u5165\u95e8\uff08\u65b0\u7248\uff09"
+  },
+  {
+    "minutes": 30,
+    "created_at": "2016-05-01 00:03:41",
+    "user_id": 185399,
+    "lab": "Python\u8fdb\u9636\uff08\u4e0b\uff09",
+    "course": "Python\u5feb\u901f\u6559\u7a0b"
+  },
+  {
+    "minutes": 3,
+    "created_at": "2016-05-01 00:05:10",
+    "user_id": 139642,
+    "lab": "Vim\u5feb\u901f\u5165\u95e8",
+    "course": "Vim\u7f16\u8f91\u5668"
+  },
+  {
+    "minutes": 3,
+    "created_at": "2016-05-01 00:10:08",
+    "user_id": 144042,
+    "lab": "Flask\u8fd0\u884c\u53ca\u8c03\u8bd5\u6a21\u5f0f",
+    "course": "Python Flask Web\u6846\u67b6"
+  },
+  {
+    "minutes": 3,
+    "created_at": "2016-05-01 00:13:00",
+    "user_id": 139642,
+    "lab": "\u9ad8\u7ea7\u529f\u80fd\u5165\u95e8",
+    "course": "Vim\u7f16\u8f91\u5668"
+  },
+  {
+    "minutes": 6,
+    "created_at": "2016-05-01 00:17:44",
+    "user_id": 176435,
+    "lab": "Hello World\uff01",
+    "course": "\u65b0\u624b\u6307\u5357\u4e4b\u73a9\u8f6c\u5b9e\u9a8c\u697c"
+  },
+  {
+    "minutes": 3,
+    "created_at": "2016-05-01 00:30:04",
+    "user_id": 131866,
+    "lab": "\u8ba4\u8bc6 JDBC",
+    "course": "JDBC \u5165\u95e8\u6559\u7a0b"
+  },
+  {
+    "minutes": 6,
+    "created_at": "2016-05-01 00:36:45",
+    "user_id": 118522,
+    "lab": "\u57fa\u672c\u7528\u6cd5\uff08\u4e0b\uff09",
+    "course": "Git \u5b9e\u6218\u6559\u7a0b"
+  },
+  {
+    "minutes": 15,
+    "created_at": "2016-05-01 00:46:38",
+    "user_id": 199071,
+    "lab":
+      "Linux \u76ee\u5f55\u7ed3\u6784\u53ca\u6587\u4ef6\u57fa\u672c\u64cd\u4f5c",
+    "course": "Linux \u57fa\u7840\u5165\u95e8\uff08\u65b0\u7248\uff09"
+  },
+  {
+    "minutes": 9,
+    "created_at": "2016-05-01 00:48:19",
+    "user_id": 186469,
+    "lab": "\u64cd\u4f5c\u7cfb\u7edf\u7684\u5f15\u5bfc",
+    "course": "\u64cd\u4f5c\u7cfb\u7edf\u539f\u7406\u4e0e\u5b9e\u8df5"
+  },
+  {
+    "minutes": 3,
+    "created_at": "2016-05-01 01:00:51",
+    "user_id": 131866,
+    "lab": "JDBC \u57fa\u7840",
+    "course": "JDBC \u5165\u95e8\u6559\u7a0b"
+  },
+  {
+    "minutes": 6,
+    "created_at": "2016-05-01 01:03:14",
+    "user_id": 193581,
+    "lab": "Laravel\u5b9e\u73b0\u7528\u6237\u6ce8\u518c\u767b\u5f55",
+    "course": "Laravel\u5b9e\u73b0\u7528\u6237\u6ce8\u518c\u767b\u5f55"
+  },
+  {
+    "minutes": 12,
+    "created_at": "2016-05-01 01:15:30",
+    "user_id": 119886,
+    "lab": "\u88c5\u9970\u8005\u6a21\u5f0f",
+    "course": "Java\u8fdb\u9636\u4e4b\u8bbe\u8ba1\u6a21\u5f0f"
+  },
+  {
+    "minutes": 84,
+    "created_at": "2016-05-01 01:23:42",
+    "user_id": 199071,
+    "lab":
+      "Linux \u76ee\u5f55\u7ed3\u6784\u53ca\u6587\u4ef6\u57fa\u672c\u64cd\u4f5c",
+    "course": "Linux \u57fa\u7840\u5165\u95e8\uff08\u65b0\u7248\uff09"
+  },
+  {
+    "minutes": 3,
+    "created_at": "2016-05-01 01:27:57",
+    "user_id": 131866,
+    "lab": "JDBC \u63a5\u53e3",
+    "course": "JDBC \u5165\u95e8\u6559\u7a0b"
+  },
+  {
+    "minutes": 6,
+    "created_at": "2016-05-01 02:02:03",
+    "user_id": 60532,
+    "lab": "\u521d\u8bc6MySQL",
+    "course": "MySQL \u53c2\u8003\u624b\u518c\u4e2d\u6587\u7248"
+  },
+  {
+    "minutes": 3,
+    "created_at": "2016-05-01 02:03:25",
+    "user_id": 131866,
+    "lab": "JDBC \u7ed3\u679c\u96c6",
+    "course": "JDBC \u5165\u95e8\u6559\u7a0b"
+  },
+  {
+    "minutes": 3,
+    "created_at": "2016-05-01 02:11:23",
+    "user_id": 199264,
+    "lab": "\u4ecb\u7ecd",
+    "course": "Python\u79d1\u5b66\u8ba1\u7b97(\u4e00)"
+  },
+  {
+    "minutes": 9,
+    "created_at": "2016-05-01 02:21:12",
+    "user_id": 171915,
+    "lab": "Python\u804a\u5929\u5ba4",
+    "course": "\u3010\u5df2\u4e0b\u7ebf\u3011Python\u804a\u5929\u5ba4"
+  },
+  {
+    "minutes": 3,
+    "created_at": "2016-05-01 02:26:12",
+    "user_id": 187529,
+    "lab": "Flask\u8fd0\u884c\u53ca\u8c03\u8bd5\u6a21\u5f0f",
+    "course": "Python Flask Web\u6846\u67b6"
+  },
+  {
+    "minutes": 3,
+    "created_at": "2016-05-01 02:44:40",
+    "user_id": 199144,
+    "lab": "\u4ecb\u7ecd",
+    "course": "Python\u79d1\u5b66\u8ba1\u7b97(\u4e00)"
+  },
+  {
+    "minutes": 3,
+    "created_at": "2016-05-01 02:53:31",
+    "user_id": 171915,
+    "lab": "Flask\u4ecb\u7ecd\u53ca\u5b89\u88c5",
+    "course": "Python Flask Web\u6846\u67b6"
+  },
+  {
+    "minutes": 6,
+    "created_at": "2016-05-01 03:38:08",
+    "user_id": 196341,
+    "lab": "\u6587\u4ef6\u6253\u5305\u4e0e\u89e3\u538b\u7f29",
+    "course": "Linux \u57fa\u7840\u5165\u95e8\uff08\u65b0\u7248\uff09"
+  },
+  {
+    "minutes": 9,
+    "created_at": "2016-05-01 03:50:22",
+    "user_id": 143598,
+    "lab":
+      "\u57fa\u4e8eNode.js+Express\u5b9e\u73b0\u7b80\u6613\u535a\u5ba2\u7cfb\u7edf",
+    "course":
+      "[\u5df2\u4e0b\u7ebf] \u57fa\u4e8eNode.js+Express\u5b9e\u73b0\u7b80\u6613\u535a\u5ba2\u7cfb\u7edf"
+  },
+  {
+    "minutes": 15,
+    "created_at": "2016-05-01 04:14:14",
+    "user_id": 176435,
+    "lab": "\u57fa\u672c\u6982\u5ff5\u53ca\u64cd\u4f5c",
+    "course": "Linux \u57fa\u7840\u5165\u95e8\uff08\u65b0\u7248\uff09"
+  },
+  {
+    "minutes": 72,
+    "created_at": "2016-05-01 05:07:51",
+    "user_id": 176435,
+    "lab": "\u7528\u6237\u53ca\u6587\u4ef6\u6743\u9650\u7ba1\u7406",
+    "course": "Linux \u57fa\u7840\u5165\u95e8\uff08\u65b0\u7248\uff09"
+  },
+  {
+    "minutes": 30,
+    "created_at": "2016-05-01 06:43:45",
+    "user_id": 68077,
+    "lab": "\u6587\u4ef6\u6253\u5305\u4e0e\u89e3\u538b\u7f29",
+    "course": "Linux \u57fa\u7840\u5165\u95e8\uff08\u65b0\u7248\uff09"
+  },
+  {
+    "minutes": 48,
+    "created_at": "2016-05-01 07:03:08",
+    "user_id": 198993,
+    "lab": "Python \u56fe\u7247\u8f6c\u5b57\u7b26\u753b",
+    "course": "Python \u56fe\u7247\u8f6c\u5b57\u7b26\u753b"
+  },
+  {
+    "minutes": 3,
+    "created_at": "2016-05-01 07:03:22",
+    "user_id": 165666,
+    "lab": "\u5b57\u7b26\u4e32\uff08\u4e00\uff09",
+    "course": "\u7ecf\u5178\u7b97\u6cd5\u89e3\u9898\u5b9e\u6218"
+  },
+  {
+    "minutes": 30,
+    "created_at": "2016-05-01 07:07:36",
+    "user_id": 165475,
+    "lab": "Python\u6df1\u5165\uff08\u4e0a\uff09",
+    "course": "Python\u5feb\u901f\u6559\u7a0b"
+  },
+  {
+    "minutes": 6,
+    "created_at": "2016-05-01 07:16:20",
+    "user_id": 68077,
+    "lab": "\u6587\u4ef6\u7cfb\u7edf\u64cd\u4f5c\u4e0e\u78c1\u76d8\u7ba1\u7406",
+    "course": "Linux \u57fa\u7840\u5165\u95e8\uff08\u65b0\u7248\uff09"
+  },
+  {
+    "minutes": 12,
+    "created_at": "2016-05-01 07:17:09",
+    "user_id": 116171,
+    "lab": "\u8f93\u5165\u548c\u8f93\u51fa",
+    "course": "Python\u7f16\u7a0b\u8bed\u8a00"
+  },
+  {
+    "minutes": 21,
+    "created_at": "2016-05-01 07:23:02",
+    "user_id": 68077,
+    "lab": "\u547d\u4ee4\u6267\u884c\u987a\u5e8f\u63a7\u5236\u4e0e\u7ba1\u9053",
+    "course": "Linux \u57fa\u7840\u5165\u95e8\uff08\u65b0\u7248\uff09"
+  },
+  {
+    "minutes": 18,
+    "created_at": "2016-05-01 07:39:47",
+    "user_id": 198693,
+    "lab": "\u7528\u6237\u53ca\u6587\u4ef6\u6743\u9650\u7ba1\u7406",
+    "course": "Linux \u57fa\u7840\u5165\u95e8\uff08\u65b0\u7248\uff09"
+  },
+  {
+    "minutes": 3,
+    "created_at": "2016-05-01 07:40:46",
+    "user_id": 196525,
+    "lab": "\u591a\u8bf4,markdown\u548c\u4ee3\u7801\u9ad8\u4eae",
+    "course": "Django \u642d\u5efa\u7b80\u6613\u535a\u5ba2"
+  },
+  {
+    "minutes": 3,
+    "created_at": "2016-05-01 07:41:29",
+    "user_id": 197012,
+    "lab": "c\u8bed\u8a00\u5236\u4f5c2048",
+    "course": "C\u8bed\u8a00\u5236\u4f5c2048"
+  },
+  {
+    "minutes": 3,
+    "created_at": "2016-05-01 07:45:08",
+    "user_id": 199079,
+    "lab": "200\u884cPython\u4ee3\u7801\u5b9e\u73b02048",
+    "course": "200\u884cPython\u4ee3\u7801\u5b9e\u73b02048"
+  },
+  {
+    "minutes": 3,
+    "created_at": "2016-05-01 07:47:24",
+    "user_id": 68077,
+    "lab": "\u7b80\u5355\u7684\u6587\u672c\u5904\u7406",
+    "course": "Linux \u57fa\u7840\u5165\u95e8\uff08\u65b0\u7248\uff09"
+  },
+  {
+    "minutes": 12,
+    "created_at": "2016-05-01 07:54:32",
+    "user_id": 198056,
+    "lab": "\u6269\u5c55\u6b63\u5219\u8868\u8fbe\u5f0f",
+    "course": "\u6b63\u5219\u8868\u8fbe\u5f0f\u57fa\u7840"
+  },
+  {
+    "minutes": 36,
+    "created_at": "2016-05-01 07:56:06",
+    "user_id": 165475,
+    "lab": "Python\u6df1\u5165\uff08\u4e0b\uff09",
+    "course": "Python\u5feb\u901f\u6559\u7a0b"
+  },
+  {
+    "minutes": 3,
+    "created_at": "2016-05-01 07:57:15",
+    "user_id": 196525,
+    "lab": "Template\u548c\u52a8\u6001URL",
+    "course": "Django \u642d\u5efa\u7b80\u6613\u535a\u5ba2"
+  },
+  {
+    "minutes": 11,
+    "created_at": "2016-05-01 08:02:14",
+    "user_id": 198693,
+    "lab":
+      "Linux \u76ee\u5f55\u7ed3\u6784\u53ca\u6587\u4ef6\u57fa\u672c\u64cd\u4f5c",
+    "course": "Linux \u57fa\u7840\u5165\u95e8\uff08\u65b0\u7248\uff09"
+  },
+  {
+    "minutes": 18,
+    "created_at": "2016-05-01 08:02:56",
+    "user_id": 198635,
+    "lab": "\u7b80\u5355\u7684\u6587\u672c\u5904\u7406",
+    "course": "Linux \u57fa\u7840\u5165\u95e8\uff08\u65b0\u7248\uff09"
+  },
+  {
+    "minutes": 21,
+    "created_at": "2016-05-01 08:03:13",
+    "user_id": 197775,
+    "lab": "\u7528\u6237\u53ca\u6587\u4ef6\u6743\u9650\u7ba1\u7406",
+    "course": "Linux \u57fa\u7840\u5165\u95e8\uff08\u65b0\u7248\uff09"
+  },
+  {
+    "minutes": 33,
+    "created_at": "2016-05-01 08:03:15",
+    "user_id": 170834,
+    "lab": "\u5b9e\u9a8c\u62a5\u544a\u56db",
+    "course": "JAVA\u7a0b\u5e8f\u8bbe\u8ba1"
+  },
+  {
+    "minutes": 6,
+    "created_at": "2016-05-01 08:04:03",
+    "user_id": 29606,
+    "lab": "Python\u5feb\u901f\u5165\u95e8",
+    "course": "Python\u7f16\u7a0b\u8bed\u8a00"
+  },
+  {
+    "minutes": 3,
+    "created_at": "2016-05-01 08:12:21",
+    "user_id": 29606,
+    "lab": "Python \u6d41\u7a0b\u63a7\u5236",
+    "course": "Python\u7f16\u7a0b\u8bed\u8a00"
+  },
+  {
+    "minutes": 54,
+    "created_at": "2016-05-01 08:23:43",
+    "user_id": 198635,
+    "lab": "\u6570\u636e\u6d41\u91cd\u5b9a\u5411",
+    "course": "Linux \u57fa\u7840\u5165\u95e8\uff08\u65b0\u7248\uff09"
+  },
+  {
+    "minutes": 3,
+    "created_at": "2016-05-01 08:24:55",
+    "user_id": 197012,
+    "lab": "\u57fa\u672c\u6982\u5ff5\u53ca\u64cd\u4f5c",
+    "course": "Linux \u57fa\u7840\u5165\u95e8\uff08\u65b0\u7248\uff09"
+  },
+  {
+    "minutes": 3,
+    "created_at": "2016-05-01 08:26:31",
+    "user_id": 120179,
+    "lab": "\u57fa\u672c\u6982\u5ff5\u53ca\u64cd\u4f5c",
+    "course": "Linux \u57fa\u7840\u5165\u95e8\uff08\u65b0\u7248\uff09"
+  },
+  {
+    "minutes": 18,
+    "created_at": "2016-05-01 08:27:07",
+    "user_id": 196942,
+    "lab": "\u57fa\u672c\u6982\u5ff5\u53ca\u64cd\u4f5c",
+    "course": "Linux \u57fa\u7840\u5165\u95e8\uff08\u65b0\u7248\uff09"
+  }
+]

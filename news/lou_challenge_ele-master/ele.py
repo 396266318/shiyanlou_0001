@@ -25,7 +25,7 @@ def ele_red_packet(number):
             }
 
     phone = number
-    # print(phone)
+    print(type(phone))
 
     sn='10db3582b00f00a1'
 
