@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ddc0180f-5b12-4e5e-bda7-13f1acd391ca" name="Default" comment="" />
+    <list default="true" id="ddc0180f-5b12-4e5e-bda7-13f1acd391ca" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,6 +15,7 @@
     <SUITE FILE_PATH="coverage/shiyanlou_0001$ele.coverage" NAME="ele Coverage Results" MODIFIED="1522835100156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/news/lou_challenge_ele-master" />
     <SUITE FILE_PATH="coverage/shiyanlou_0001$126email.coverage" NAME="126email Coverage Results" MODIFIED="1524130736032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop" />
     <SUITE FILE_PATH="coverage/shiyanlou_0001$shiyanlou_analysis.coverage" NAME="shiyanlou_analysis Coverage Results" MODIFIED="1524909375673" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/news/Code" />
+    <SUITE FILE_PATH="coverage/shiyanlou_0001$app.coverage" NAME="app Coverage Results" MODIFIED="1525254880843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/news/Code/simpledu" />
     <SUITE FILE_PATH="coverage/shiyanlou_0001$sfz.coverage" NAME="sfz Coverage Results" MODIFIED="1524132866570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop" />
     <SUITE FILE_PATH="coverage/shiyanlou_0001$shiyanlou_courses.coverage" NAME="shiyanlou_courses Coverage Results" MODIFIED="1524910452732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/news/Code" />
     <SUITE FILE_PATH="coverage/shiyanlou_0001$web_run.coverage" NAME="web_run Coverage Results" MODIFIED="1522836501549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/news/lou_challenge_ele-master" />
@@ -34,35 +37,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="shiyanlou_analysis.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/news/Code/shiyanlou_analysis.py">
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/news/Code/simpledu/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="29" column="69" lean-forward="false" selection-start-line="29" selection-start-column="69" selection-end-line="29" selection-end-column="69" />
+            <state relative-caret-position="459">
+              <caret line="50" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding>
-                <element signature="e#0#19#0" expanded="true" />
+                <element signature="e#0#29#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="shiyanlou_courses.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/news/Code/shiyanlou_courses.py">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/news/Code/simpledu/static/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="axisgrid.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Python36/Lib/site-packages/seaborn/axisgrid.py">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/news/Code/simpledu/static/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="47454">
-              <caret line="2172" column="56" lean-forward="false" selection-start-line="2172" selection-start-column="51" selection-end-line="2172" selection-end-column="56" />
+            <state relative-caret-position="22">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/news/Code/simpledu/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -99,6 +110,8 @@
         <option value="$PROJECT_DIR$/news/Code/pandas_plt.py" />
         <option value="$PROJECT_DIR$/news/Code/shiyanlou_analysis.py" />
         <option value="$PROJECT_DIR$/news/Code/shiyanlou_courses.py" />
+        <option value="$PROJECT_DIR$/news/Code/simpledu/app.py" />
+        <option value="$PROJECT_DIR$/news/Code/simpledu/templates/index.html" />
       </list>
     </option>
   </component>
@@ -109,8 +122,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="100" />
-    <option name="y" value="51" />
+    <option name="x" value="125" />
+    <option name="y" value="84" />
     <option name="width" value="1490" />
     <option name="height" value="960" />
   </component>
@@ -129,6 +142,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -151,6 +166,29 @@
               <item name="shiyanlou_0001" type="b2602c69:ProjectViewProjectNode" />
               <item name="shiyanlou_0001" type="462c0819:PsiDirectoryNode" />
               <item name="news" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="simpledu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shiyanlou_0001" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shiyanlou_0001" type="462c0819:PsiDirectoryNode" />
+              <item name="news" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="simpledu" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shiyanlou_0001" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shiyanlou_0001" type="462c0819:PsiDirectoryNode" />
+              <item name="news" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="simpledu" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shiyanlou_0001" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shiyanlou_0001" type="462c0819:PsiDirectoryNode" />
+              <item name="news" type="462c0819:PsiDirectoryNode" />
               <item name="lou_challenge_ele-master" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -164,8 +202,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -173,6 +209,11 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Documents\GitHub\shiyanlou_0001\news\Code\simpledu\static" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -186,26 +227,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.shiyanlou_courses">
-    <configuration name="126email" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Desktop" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="shiyanlou_0001" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/Desktop/126email.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.app">
     <configuration name="analysis" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -220,6 +242,25 @@
       <module name="shiyanlou_0001" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/news/Code/analysis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/news/Code/simpledu" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="shiyanlou_0001" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/news/Code/simpledu/app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -283,19 +324,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.126email" />
-      <item index="1" class="java.lang.String" itemvalue="Python.sfz" />
-      <item index="2" class="java.lang.String" itemvalue="Python.analysis" />
-      <item index="3" class="java.lang.String" itemvalue="Python.shiyanlou_analysis" />
-      <item index="4" class="java.lang.String" itemvalue="Python.shiyanlou_courses" />
+      <item index="0" class="java.lang.String" itemvalue="Python.sfz" />
+      <item index="1" class="java.lang.String" itemvalue="Python.analysis" />
+      <item index="2" class="java.lang.String" itemvalue="Python.shiyanlou_analysis" />
+      <item index="3" class="java.lang.String" itemvalue="Python.shiyanlou_courses" />
+      <item index="4" class="java.lang.String" itemvalue="Python.app" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.shiyanlou_courses" />
-        <item index="1" class="java.lang.String" itemvalue="Python.shiyanlou_analysis" />
-        <item index="2" class="java.lang.String" itemvalue="Python.analysis" />
-        <item index="3" class="java.lang.String" itemvalue="Python.sfz" />
-        <item index="4" class="java.lang.String" itemvalue="Python.126email" />
+        <item index="0" class="java.lang.String" itemvalue="Python.app" />
+        <item index="1" class="java.lang.String" itemvalue="Python.shiyanlou_courses" />
+        <item index="2" class="java.lang.String" itemvalue="Python.shiyanlou_analysis" />
+        <item index="3" class="java.lang.String" itemvalue="Python.analysis" />
+        <item index="4" class="java.lang.String" itemvalue="Python.sfz" />
       </list>
     </recent_temporary>
   </component>
@@ -317,14 +358,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32263243" sideWeight="0.5028129" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30100334" sideWeight="0.49718705" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28539577" sideWeight="0.49718705" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20182014" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14614561" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.380621" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -351,6 +393,34 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/news/Code/shiyanlou_analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="29" column="69" lean-forward="false" selection-start-line="29" selection-start-column="69" selection-end-line="29" selection-end-column="69" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python36/Lib/site-packages/seaborn/axisgrid.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47784">
+          <caret line="2172" column="56" lean-forward="false" selection-start-line="2172" selection-start-column="51" selection-end-line="2172" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news/Code/shiyanlou_courses.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/news/Code/shiyanlou_analysis.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
@@ -586,6 +656,40 @@
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news/Code/simpledu/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="50" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news/Code/simpledu/static/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news/Code/simpledu/static/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news/Code/simpledu/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
