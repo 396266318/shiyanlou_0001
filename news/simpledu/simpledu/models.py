@@ -1,7 +1,7 @@
 from datetime import datetime
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
-
+from flask_login import UserMixin
 
 db = SQLAlchemy()
 
@@ -13,7 +13,7 @@ class Base(db.Model):
     updated_at = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 
 
-class User(Base):
+class User(Base, UserMixin):
 
     __tablename__ = 'user'
     # 用数值表示角色，方便判断是否有权限, 比如说有个操作要角色为员工
