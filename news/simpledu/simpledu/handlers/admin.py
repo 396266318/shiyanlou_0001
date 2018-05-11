@@ -4,5 +4,5 @@ admin = Blueprint('admin', __name__, url_prefix='/admin')
 
 #注意路由和函数名的变化
 @admin.route('/')
-def index():
+def admin_index():
     return 'admin'
