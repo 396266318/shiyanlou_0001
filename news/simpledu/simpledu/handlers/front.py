@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, redirect, url_for
+from flask import Blueprint, render_template, url_for, flash, redirect
 from flask import flash
 from flask_login import login_user, logout_user, login_required
 from simpledu.models import Course, User
@@ -37,7 +37,11 @@ def logout():
 def register():
     form = RegisterForm()
     if form.validate_on_submit():
-        form.create_user()
-        flash("注册成功,请登录！", "success")
+        if not form.username.data.isalnum():
+            flash('username only support alphabet and digital', 'success')
+        else:
+            form.create_user()
+            flash("注册成功,请登录！", "success")
         return redirect(url_for('.login'))
     return render_template('register.html', form=form)
+
